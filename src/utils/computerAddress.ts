@@ -1,0 +1,20 @@
+import { computePublicKey } from "./computePublicKey";
+import { toChecksumAddress } from "./toChecksumAddress";
+import { hexDataSlice } from "./bytes";
+import { keccak256 } from "./keccak256";
+
+/**
+ * Computes the address that corresponds to a specified public or private key
+ */
+export function computeAddress(key: string): string {
+  // compressed public keys start with 0x04
+  // uncompressed public keys start with 0x03 or 0x02
+  if (
+    !key.startsWith("0x04") &&
+    !key.startsWith("0x03") &&
+    !key.startsWith("0x02")
+  ) {
+    key = computePublicKey(key);
+  }
+  return toChecksumAddress(hexDataSlice(keccak256(hexDataSlice(key, 1)), 12));
+}

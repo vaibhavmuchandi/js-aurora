@@ -1,5 +1,5 @@
-import type { BlockResponse } from "../../types/Block.types";
-import { toChecksumAddress } from "../../utils/toChecksumAddress";
+import type { BlockResponse } from "../..";
+import { toChecksumAddress } from "../..";
 import { tinyBig } from "../../shared/tinyBig/tinyBig";
 import type { RPCBlock } from "../../types/Block.types";
 import type { RPCTransaction } from "../../types/Transaction.types";

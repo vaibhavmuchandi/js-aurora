@@ -1,4 +1,4 @@
-import { toChecksumAddress } from "./toChecksumAddress";
+import { toChecksumAddress } from "..";
 import { validateType } from "../shared/validateTypes";
 
 /**

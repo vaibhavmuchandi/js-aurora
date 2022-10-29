@@ -1,7 +1,5 @@
-import type { Bytes } from "../utils/bytes";
-import { concat } from "../utils/bytes";
-import { keccak256 } from "./keccak256";
-import { toUtf8Bytes } from "./toUtf8Bytes";
+import type { Bytes } from "../index";
+import { concat, keccak256, toUtf8Bytes } from "../index";
 
 const messagePrefix = "\x19Aurora Signed Message:\n";
 

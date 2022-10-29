@@ -1,5 +1,4 @@
-import { computePublicKey } from "./computePublicKey";
-import { toChecksumAddress } from "./toChecksumAddress";
+import { computePublicKey, toChecksumAddress } from "..";
 import { hexDataSlice } from "./bytes";
 import { keccak256 } from "./keccak256";
 

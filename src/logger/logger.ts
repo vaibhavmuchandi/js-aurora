@@ -1,4 +1,4 @@
-import { version } from "./package-version";
+import { version } from "./packageVersion";
 class Logger {
   private packageVersion: string;
   constructor() {

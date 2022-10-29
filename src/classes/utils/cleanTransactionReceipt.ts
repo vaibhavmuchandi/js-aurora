@@ -1,5 +1,4 @@
-import { tinyBig } from "../../shared/tinyBig/tinyBig";
-import { toChecksumAddress } from "../../utils/toChecksumAddress";
+import { tinyBig, toChecksumAddress } from "../..";
 import type {
   Log,
   RPCLog,

@@ -3,19 +3,10 @@ import { validateType } from "../shared/validateTypes";
 
 /**
  * Returns an Ethereum address in proper mixed-case checksum.
- * Does NOT support ICAP
+
+ * inspired from ["getAddress" in ethers.js](https://docs.ethers.io/v5/api/utils/address/#utils-getAddress)
  *
- * @param address An Ethereum address. Mixed, lower, and uppercase are all valid
- * @returns a valid checksum address
- * @example
- * ```javascript
- * toChecksumAddress('0xfB6916095ca1df60bB79Ce92cE3Ea74c37c5d359');
- * // '0xfB6916095ca1df60bB79Ce92cE3Ea74c37c5d359'
- * ```
- *
- * Similar to ["getAddress" in ethers.js](https://docs.ethers.io/v5/api/utils/address/#utils-getAddress)
- *
- * Similar to ["toChecksumAddress" in web3.js](https://web3js.readthedocs.io/en/v1.7.1/web3-utils.html#tochecksumaddress)
+ * inspired from ["toChecksumAddress" in web3.js](https://web3js.readthedocs.io/en/v1.7.1/web3-utils.html#tochecksumaddress)
  */
 export function toChecksumAddress(address: string) {
   validateType(address, ["string"]);

@@ -1,9 +1,6 @@
 import unfetch from "isomorphic-unfetch";
 /**
  * Makes a post request with the specified JSON data, normally to the a AURORA JSON RPC API endpoint
- * @param url the URL to send the request to
- * @param body JSON POST body
- * @returns the JSON response from the server
  */
 export function post(url: string, body: Record<string, unknown>) {
   return unfetch(url, {

@@ -32,7 +32,6 @@ export type TransactionResponse = Modify<
 
 /**
  * Type that contains information from the receipt of a transaction
- *
  * * Similar to [`Type TransactionReceipt on ethers.providers`](https://docs.ethers.io/v5/api/providers/types/#providers-TransactionReceipt)
  */
 export type TransactionReceipt = Modify<

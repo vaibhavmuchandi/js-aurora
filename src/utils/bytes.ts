@@ -1,4 +1,4 @@
-// duplicated from https://github.com/ethers-io/ethers.js/blob/f599d6f23dad0d0acaa3828d6b7acaab2d5e455b/packages/bytes/src.ts/index.ts
+// inspired from https://github.com/ethers-io/ethers.js/blob/f599d6f23dad0d0acaa3828d6b7acaab2d5e455b/packages/bytes/src.ts/index.ts
 import { logger } from "../logger/logger";
 
 export type Bytes = ArrayLike<number>;

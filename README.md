@@ -957,10 +957,7 @@ import { FallthroughProvider } from "js-aurora";
 // The FallthroughProvider handles falling through to the next valid URL.
 // It's dynamic to never trust one URL again when it fails * until it has tried all other provided URLs
 // The default timeout for a request is 8 seconds after which it moves to the next URL
-const provider = new FallthroughProvider([
-  "https://bad.com",
-  "https://free-eth-node.com/api/eth",
-]);
+const provider = new FallthroughProvider(["aurora-node"]);
 provider.getGasPrice().toNumber();
 /*
 39695942769
@@ -1238,13 +1235,8 @@ const provider = new JsonRpcProvider("RPC URL HERE" /* Try Infura or POKT */);
 ```
 
 ```javascript
-jsonRpcProvider("https://free-eth-node.com/api/eth").getNetwork();
-// { chainId: 1, name: 'eth', ensAddress: '0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e' }
-```
-
-```javascript
-jsonRpcProvider("https://free-eth-node.com/api/MATIC").getNetwork();
-// { chainId: 137, name: 'MATIC', ensAddress: null }
+jsonRpcProvider("https://testnet.aurora.dev").getNetwork();
+// { chainId: 1313161555, name: 'aurora' }
 ```
 
   </details>

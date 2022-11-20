@@ -1,7 +1,7 @@
 {
   "name": "js-aurora",
   "version": "0.0.1",
-  "description": "Light-weight client side package for development on Aurora",
+  "description": "Light-weight client side package for development on Aurora EVM",
   "module": "./dist/esm/index.js",
   "browser": "./dist/cjs/index.umd.js",
   "unpkg": "./dist/cjs/index.umd.js",
@@ -37,7 +37,8 @@
     "build": "rm -rf dist && npm run compile",
     "build:esm": "tsc -p tsconfig.json",
     "build:cjs": "tsc -p tsconfig-cjs.json",
-    "build:umd": "microbundle --external none --format umd"
+    "build:umd": "microbundle --external none --format umd",
+    "doc": "typedoc"
   },
   "devDependencies": {
     "@size-limit/preset-small-lib": "^7.0.8",

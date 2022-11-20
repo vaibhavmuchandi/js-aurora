@@ -102,7 +102,7 @@ const { etherToWei } = require("js-aurora");
 
 <!-- ⛔️ AUTO-GENERATED-CONTENT:START (FUNCTIONS) -->
 
-#### [`arrayify`]
+#### `arrayify`]
 
 ```typescript
 arrayify(value: number | BytesLike | Hexable, options: DataOptions): Uint8Array
@@ -134,7 +134,7 @@ arrayify("0x1", { hexPad: "right" });
 
   <br/>
 
-#### [`computeAddress`]
+#### `computeAddress`]
 
 ```typescript
 computeAddress(key: string): string
@@ -165,7 +165,7 @@ computeAddress(
 
   <br/>
 
-#### [`computePublicKey`]
+#### `computePublicKey`]
 
 ```typescript
 computePublicKey(privKey: BytesLike): string
@@ -197,7 +197,7 @@ computePublicKey([
 
   <br/>
 
-#### [`concat`]
+#### `concat`]
 
 ```typescript
 concat(arrayOfBytesLike: Array<BytesLikeWithNumber>): Uint8Array
@@ -219,7 +219,7 @@ concat([0, 1]);
 
   <br/>
 
-#### [`etherToGwei`]
+#### `etherToGwei`
 
 ```typescript
 etherToGwei(etherQuantity: string | number | TinyBig | Big): TinyBig
@@ -250,7 +250,7 @@ etherToGwei(1000).toNumber();
 
   <br/>
 
-#### [`etherToWei`]
+#### `etherToWei`
 
 ```typescript
 etherToWei(etherQuantity: string | number | TinyBig | Big): TinyBig
@@ -281,7 +281,7 @@ etherToWei(1000).toNumber();
 
   <br/>
 
-#### [`gweiToEther`]
+#### `gweiToEther`
 
 ```typescript
 gweiToEther(gweiQuantity: string | number | TinyBig | Big): TinyBig
@@ -312,7 +312,7 @@ gweiToEther(1000000000000).toNumber();
 
   <br/>
 
-#### [`hashMessage`]
+#### `hashMessage`
 
 ```typescript
 hashMessage(message: string | Bytes): string
@@ -334,7 +334,7 @@ hashMessage("Hello World");
 
   <br/>
 
-#### [`hexConcat`]
+#### `hexConcat`
 
 ```typescript
 hexConcat(items: Array<BytesLike>): string
@@ -355,7 +355,7 @@ hexConcat([[2, 4, 0, 1], 9, "0x2934", "0x3947"]);
 
   <br/>
 
-#### [`hexDataLength`]
+#### `hexDataLength`
 
 ```typescript
 hexDataLength(data: BytesLike): undefined
@@ -382,7 +382,7 @@ hexDataLength("0x3925");
 
   <br/>
 
-#### [`hexDataSlice`]
+#### [`hexDataSlice`
 
 ```typescript
 hexDataSlice(data: BytesLikeWithNumber, offset: number, endOffset: number): string
@@ -404,7 +404,7 @@ hexDataSlice([20, 6, 48], 0, 2);
 
   <br/>
 
-#### [`hexStripZeros`]
+#### `hexStripZeros`
 
 ```typescript
 hexStripZeros(value: BytesLike): string
@@ -426,7 +426,7 @@ hexStripZeros([0, 0, 0, 48]);
 
   <br/>
 
-#### [`hexValue`]
+#### `hexValue`
 
 ```typescript
 hexValue(value: number | bigint | BytesLike | Hexable): string
@@ -453,7 +453,7 @@ hexValue([9, 4, 19, 4]);
 
   <br/>
 
-#### [`hexZeroPad`]
+#### `hexZeroPad`
 
 ```typescript
 hexZeroPad(value: BytesLikeWithNumber, length: number): string
@@ -485,7 +485,7 @@ hexZeroPad("12345", 1);
 
   <br/>
 
-#### [`hexlify`]
+#### `hexlify`
 
 ```typescript
 hexlify(value: number | bigint | BytesLike | Hexable, options: DataOptions): string
@@ -512,7 +512,7 @@ hexlify(14);
 
   <br/>
 
-#### [`isAddress`]
+#### `isAddress`
 
 ```typescript
 isAddress(address: string): boolean
@@ -545,7 +545,7 @@ isAddress("vitalik.eth");
 
   <br/>
 
-#### [`isBytes`]
+#### `isBytes`
 
 ```typescript
 isBytes(value: any): value
@@ -577,7 +577,7 @@ isBytes(new Uint8Array(1));
 
   <br/>
 
-#### [`isBytesLike`]
+#### `isBytesLike`
 
 ```typescript
 isBytesLike(value: any): value
@@ -609,7 +609,7 @@ isBytesLike(new Uint8Array(1));
 
   <br/>
 
-#### [`isHexString`]
+#### `isHexString`
 
 ```typescript
 isHexString(value: any, length: number): boolean
@@ -637,7 +637,7 @@ isHexString("0x4924", 4);
 
   <br/>
 
-#### [`jsonRpcProvider`]
+#### `jsonRpcProvider`
 
 ```typescript
 jsonRpcProvider(rpcUrl: string): JsonRpcProvider
@@ -663,7 +663,7 @@ jsonRpcProvider()
 
   <br/>
 
-#### [`keccak256`]
+#### `keccak256`
 
 ```typescript
 keccak256(data: BytesLike): string
@@ -688,7 +688,7 @@ keccak256("0x123");
 
   <br/>
 
-#### [`pack`]
+#### `pack`
 
 ```typescript
 pack(types: Array<string>, values: Array<any>): string
@@ -712,7 +712,7 @@ pack(types, values);
 
   <br/>
 
-#### [`solidityKeccak256`]
+#### `solidityKeccak256`
 
 ```typescript
 solidityKeccak256(types: Array<string>, values: Array<any>): string
@@ -746,7 +746,7 @@ solidityKeccak256(types, values);
 
   <br/>
 
-#### [`splitSignature`]
+#### `splitSignature`
 
 ```typescript
 splitSignature(signature: SignatureLike): Signature
@@ -777,7 +777,7 @@ splitSignature(signature);
 
   <br/>
 
-#### [`stripZeros`]
+#### `stripZeros`
 
 ```typescript
 stripZeros(value: BytesLike): Uint8Array
@@ -800,7 +800,7 @@ stripZeros("0x00002834");
 
   <br/>
 
-#### [`tinyBig`]
+#### `tinyBig`
 
 ```typescript
 tinyBig(value: string | number | TinyBig | Big): TinyBig
@@ -822,7 +822,7 @@ tinyBig(10).times(3).toNumber();
 
   <br/>
 
-#### [`toChecksumAddress`]
+#### `toChecksumAddress`
 
 ```typescript
 toChecksumAddress(address: string): string
@@ -848,7 +848,7 @@ Similar to ["toChecksumAddress" in web3.js](https://web3js.readthedocs.io/en/v1.
 
   <br/>
 
-#### [`toUtf8Bytes`]
+#### `toUtf8Bytes`
 
 ```typescript
 toUtf8Bytes(data: string): Uint8Array
@@ -863,17 +863,17 @@ import { toUtf8Bytes } from "js-aurora";
 
 ```javascript
 toUtf8Bytes("js-aurora");
-// Uint8Array { [Iterator] 0: 101, 1: 115, 2: 115, 3: 101, 4: 110, 5: 116, 6: 105, 7: 97, 8: 108, 9: 45, 10: 101, 11: 116, 12: 104 }
+// Uint8Array { Iterator] 0: 101, 1: 115, 2: 115, 3: 101, 4: 110, 5: 116, 6: 105, 7: 97, 8: 108, 9: 45, 10: 101, 11: 116, 12: 104 }
 
 toUtf8Bytes("ethereum");
-// Uint8Array { [Iterator]  0: 101, 1: 116, 2: 104, 3: 101, 4: 114, 5: 101, 6: 117, 7: 109 }
+// Uint8Array { Iterator]  0: 101, 1: 116, 2: 104, 3: 101, 4: 114, 5: 101, 6: 117, 7: 109 }
 ```
 
   </details>
 
   <br/>
 
-#### [`weiToEther`]
+#### `weiToEther`
 
 ```typescript
 weiToEther(weiQuantity: string | number | TinyBig | Big): TinyBig
@@ -904,7 +904,7 @@ weiToEther(1000000000000000000000).toNumber();
 
   <br/>
 
-#### [`zeroPad`]
+#### `zeroPad`
 
 ```typescript
 zeroPad(value: BytesLike, length: number): Uint8Array
@@ -970,7 +970,7 @@ provider.getGasPrice().toNumber();
 
 <!-- ⛔️ AUTO-GENERATED-CONTENT:START (PROVIDER) -->
 
-#### [`call`]
+#### `call`
 
 ```typescript
 provider.call(transaction: TransactionRequest, blockTag?: BlockTag): Promise<string>
@@ -996,7 +996,7 @@ await provider.call({
 
   <br/>
 
-#### [`estimateGas`]
+#### `estimateGas`
 
 ```typescript
 provider.estimateGas(transaction: TransactionRequest): Promise<TinyBig>
@@ -1024,7 +1024,7 @@ await provider.estimateGas({
 
   <br/>
 
-#### [`getBalance`]
+#### `getBalance`
 
 ```typescript
 provider.getBalance(address: string, blockTag?: BlockTag): Promise<TinyBig>
@@ -1047,7 +1047,7 @@ await provider.getBalance("0x7cB57B5A97eAbe94205C07890BE4c1aD31E486A8");
 
   <br/>
 
-#### [`getBlock`]
+#### `getBlock`
 
 ```typescript
 provider.getBlock(timeFrame?: BlockTag, returnTransactionObjects?: boolean): Promise<BlockResponse>
@@ -1098,7 +1098,7 @@ await provider.getBlock(14879862);
 
   <br/>
 
-#### [`getBlockNumber`]
+#### `getBlockNumber`
 
 ```typescript
 provider.getBlockNumber(): Promise<number>
@@ -1121,7 +1121,7 @@ await provider.getBlockNumber();
 
   <br/>
 
-#### [`getCode`]
+#### `getCode`
 
 ```typescript
 provider.getCode(address: string, blockTag?: BlockTag): Promise<string>
@@ -1147,7 +1147,7 @@ await jsonRpcProvider().getCode(
 
   <br/>
 
-#### [`getGasPrice`]
+#### `getGasPrice`
 
 ```typescript
 provider.getGasPrice(): Promise<TinyBig>
@@ -1170,7 +1170,7 @@ await provider.getGasPrice();
 
   <br/>
 
-#### [`getLogs`]
+#### `getLogs`
 
 ```typescript
 provider.getLogs(filter: Filter | FilterByBlockHash): Promise<Array<Log>>
@@ -1220,7 +1220,7 @@ provider.getLogs({
 
   <br/>
 
-#### [`getNetwork`]
+#### `getNetwork`
 
 ```typescript
 provider.getNetwork(): Promise<Network>
@@ -1243,7 +1243,7 @@ jsonRpcProvider("https://testnet.aurora.dev").getNetwork();
 
   <br/>
 
-#### [`getTransaction`]
+#### `getTransaction`
 
 ```typescript
 provider.getTransaction(transactionHash: string): Promise<TransactionResponse>
@@ -1289,7 +1289,7 @@ await provider.getTransaction(
 
   <br/>
 
-#### [`getTransactionCount`]
+#### `getTransactionCount`
 
 ```typescript
 provider.getTransactionCount(address: string, blockTag?: BlockTag): Promise<number>
@@ -1330,7 +1330,7 @@ await provider.getTransactionCount(
 
   <br/>
 
-#### [`getTransactionReceipt`]
+#### `getTransactionReceipt`
 
 ```typescript
 provider.getTransactionReceipt(transactionHash: string): Promise<TransactionReceipt>

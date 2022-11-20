@@ -1,5 +1,5 @@
 {
-  "name": "aurora-js",
+  "name": "js-aurora",
   "version": "0.0.1",
   "description": "Light-weight client side package for development on Aurora",
   "module": "./dist/esm/index.js",
@@ -8,7 +8,7 @@
   "umd:main": "./dist/cjs/index.umd.js",
   "main": "./dist/cjs/index.js",
   "source": "src/index.ts",
-  "repository": "https://github.com/vaibhavmuchandi/aurora-js",
+  "repository": "https://github.com/vaibhavmuchandi/js-aurora",
   "author": "0xvaibhav",
   "license": "MIT",
   "size-limit": [

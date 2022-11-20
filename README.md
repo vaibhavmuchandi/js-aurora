@@ -1,9 +1,9 @@
 <p align="center">
   <b>
-    js-aurora
+    <h1>js-aurora</h1>
   </b>
   <br/>
-  <i>Light-weight client side package for development on Aurora EVM</i>
+  <i>Light-weight client side package for development on Aurora EVM for faster execution with near-identical api's to Web3.js and Ethers</i>
   <br/>
 </p>
 
